@@ -1,6 +1,33 @@
-完全削除  Complete Delete for Windows
+## 完全削除  Complete Delete for Windows<!-- omit in toc -->
 
----
+[Home](https://oasis3855.github.io/webpage/) > [Software](https://oasis3855.github.io/webpage/software/index.html) > [Software Download](https://oasis3855.github.io/webpage/software/software-download.html) > ***win-compdel*** (this page)
+
+<br />
+<br />
+
+Last Updated : Feb. 2012    --   ***this is discontinued  software 開発終了***
+
+- [ソフトウエアのダウンロード](#ソフトウエアのダウンロード)
+- [概要](#概要)
+- [重要説明事項](#重要説明事項)
+  - [本ソフトウエアの各国政府基準対応可否について](#本ソフトウエアの各国政府基準対応可否について)
+- [機能の概略](#機能の概略)
+  - [もう少し詳しい技術的説明](#もう少し詳しい技術的説明)
+- [制限事項](#制限事項)
+- [より安全を期するために](#より安全を期するために)
+- [動作環境](#動作環境)
+- [バージョンアップ情報](#バージョンアップ情報)
+- [主な掲載雑誌](#主な掲載雑誌)
+- [ライセンス](#ライセンス)
+
+<br />
+<br />
+
+## ソフトウエアのダウンロード
+
+- [このGitHubリポジトリを参照する（ソースコード）](source_code/)
+- [このGitHubリポジトリを参照する（実行ファイルやソースコードの圧縮ファイル）](release/)
+- [Google Documentsから実行ファイルやソースコードの圧縮ファイル](https://docs.google.com/open?id=0B7BSijZJ2TAHYzQ0Y2JkYTQtZTdjYi00M2JmLThlODctNDQwMmI3ZWQ3Nzc1)
 
 ## 概要
 
@@ -12,7 +39,7 @@
 
 ##  重要説明事項 
 
-ファイルの完全削除を行おうと考える前に、添付ヘルプファイルおよび『完全削除の限界と対処法』を必ずお読みください。 
+ファイルの完全削除を行おうと考える前に、添付ヘルプファイルおよび『[完全削除の限界と対処法](README_tech.md)』を必ずお読みください。 
 
 ###  本ソフトウエアの各国政府基準対応可否について 
 
