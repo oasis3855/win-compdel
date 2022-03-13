@@ -25,9 +25,9 @@ Last Updated : Feb. 2012    --   ***this is discontinued  software 開発終了*
 
 ## ソフトウエアのダウンロード
 
-- [このGitHubリポジトリを参照する（ソースコード）](source_code/)
-- [このGitHubリポジトリを参照する（実行ファイルやソースコードの圧縮ファイル）](release/)
-- [Google Documentsから実行ファイルやソースコードの圧縮ファイル](https://docs.google.com/open?id=0B7BSijZJ2TAHYzQ0Y2JkYTQtZTdjYi00M2JmLThlODctNDQwMmI3ZWQ3Nzc1)
+- ![download icon](readme_pics/soft-ico-download-darkmode.gif)   [このGitHubリポジトリを参照する（ソースコード）](source_code/)
+- ![download icon](readme_pics/soft-ico-download-darkmode.gif)   [このGitHubリポジトリのreleaseディレクトリを参照する（実行ファイル、ソースコード）](release/)
+- ![download icon](readme_pics/soft-ico-download-darkmode.gif)   [Google Documentsを参照する（実行ファイル、ソースコード）](https://docs.google.com/open?id=0B7BSijZJ2TAHYzQ0Y2JkYTQtZTdjYi00M2JmLThlODctNDQwMmI3ZWQ3Nzc1)
 
 ## 概要
 
