@@ -22,6 +22,7 @@ Last Updated : Feb. 2012    --   ***this is discontinued  software 開発終了*
   - [暗号化仮想ディスクを用いる](#暗号化仮想ディスクを用いる)
   - [Linuxでファイルの完全削除を行う](#linuxでファイルの完全削除を行う)
   - [ディスク全領域の完全消去処理](#ディスク全領域の完全消去処理)
+  - [セキュアイレースが可能なディスクの完全消去処理（Linux）](#セキュアイレースが可能なディスクの完全消去処理linux)
 - [FATファイルシステムと完全削除](#fatファイルシステムと完全削除)
   - [FATファイルシステム](#fatファイルシステム)
   - [ファイル削除と復活](#ファイル削除と復活)
@@ -163,6 +164,49 @@ dd if=/dev/zero of=/dev/sda1
 
 ```
 dd if=/dev/zero of=/dev/sda1 bs=10M 
+```
+
+### セキュアイレースが可能なディスクの完全消去処理（Linux）
+
+**SATAディスクの場合**
+
+セキュアイレースがサポートされているか確認する方法
+
+```
+sudo hdparm -I /dev/sdX
+>  Security: 
+>    Master password revision code = 65534
+>    supported
+>  not  enabled
+>  not  locked
+>    frozen
+>  not  expired: security count
+>    supported: enhanced erase     ← セキュアイレース可能
+>  20min for SECURITY ERASE UNIT. 60min for ENHANCED SECURITY ERASE UNIT.
+```
+
+セキュアイレースの実行 （ディスクにダミーパスワード「pass0123」を設定後、イレース実行）
+
+```
+sudo hdparm --user-master u --security-set-pass pass0123 /dev/sdX
+sudo hdparm --user-master u --security-erase pass0123 /dev/sdX
+```
+
+**NVMeディスクの場合**
+
+ディスクのデバイス名を得る
+
+```
+sudo nvme --list
+> Node                  SN                   Model                                    
+> --------------------- -------------------- ----------------------------------------
+> /dev/nvme0n1          21155T460409         WDC WDS100T2B0C-00PXH0                  
+```
+
+セキュアイレースの実行
+
+```
+sudo nvme-format --ses=1 /dev/nvme0n1
 ```
 
 ## FATファイルシステムと完全削除
